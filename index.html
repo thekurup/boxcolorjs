@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <style>
+    #hi{
+      width: 400px;
+      height:400px;
+      border:1px solid black;
+      margin-left: 100px;
+    }
+    #r{
+      margin-top: 100px;
+    }
+    .hey{
+      background-color: rgb(29, 155, 240);
+      padding-right:16px;
+      padding-left:16px;
+      padding-bottom:7px;
+      padding-top:7px;
+      border:none;
+      cursor: pointer;
+      border-radius:50px;
+      font-weight: bold;
+      font-size:15px;
+      color:white;
+      margin-left: 10px;
+      margin-bottom:50px;
+      transition: color 0.15s;
+    }
+    .hey:hover{
+      background-color:  rgb(29, 155, 240);
+      box-shadow : 5px 5px 10px rgba(0,0,0,0.50);
+      color:chartreuse;
+
+    }
+  </style>
+  <div id="hi">
+    <button onclick="hello('red')">Red</button>
+    <button onclick="hello('blue')">Blue</button>
+    <button onclick="hello('green')">Green</button>
+    <button onclick="hello('orange')">Orange</button>
+
+  </div>
+
+  <input type="text" id="r">
+  <button class="hey" onclick="display()">Submit</button>
+  <h1 id="app"></h1>
+  <script>
+    function hello(col){
+      document.getElementById('hi').style.background=col;
+    }
+    function display(){
+      var input=document.getElementById('r').value;
+      
+      
+      if(input == "riya"){
+        alert('𝓜𝓮𝓼𝓼𝓪𝓰𝓮 𝓯𝓻𝓸𝓶 𝓗𝓮𝓻 ❤️')
+        
+      }
+
+    }
+  </script>
+</body>
+</html>
